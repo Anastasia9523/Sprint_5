@@ -21,11 +21,12 @@ class AccountLocators: # Личный кабинет
     LOGOUT_BUTTON =  (By.XPATH, "//button[text()='Выход']") # Кнопка выхода 
     CONSTRUCTOR_BUTTON = (By.XPATH, "//p[text()='Конструктор']") # Кнопка «Конструктор» 
     LOGO_BUTTON = (By.XPATH, "//div[@class='AppHeader_header__logo__2D0X2']") # Логотип Stellar Burgers 
+    LOGIN_HEADER = (By.XPATH, "//h2[text()='Вход']") # Заголовок "Вход"
     
 class ConstructorLocators: # Конструктор 
-    SECTION_BUNS = (By.XPATH, "//span[text()='Булки']") # Раздел «Булки» 
-    SECTION_SAUCES = (By.XPATH, "//span[text()='Соусы']") # Раздел «Соусы» 
-    SECTION_FILLINGS = (By.XPATH, "//span[text()='Начинки']") # Раздел «Начинки»
+    SECTION_BUNS = (By.XPATH, "//span[text()='Булки']/parent::div[contains(@class, 'tab_tab__1SPyG')]") # Раздел "Булки"
+    SECTION_SAUCES = (By.XPATH, "//span[text()='Соусы']/parent::div[contains(@class, 'tab_tab__1SPyG')]") # Раздел "Соусы"
+    SECTION_FILLINGS = (By.XPATH, "//span[text()='Начинки']/parent::div[contains(@class, 'tab_tab__1SPyG')]") # Раздел "Начинки"
 
     CONTENT_BUNS = (By.XPATH, "//h2[text()='Булки']")
     CONTENT_SAUCES = (By.XPATH, "//h2[text()='Соусы']")

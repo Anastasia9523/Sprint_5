@@ -24,9 +24,9 @@ class AccountLocators: # Личный кабинет
     LOGIN_HEADER = (By.XPATH, "//h2[text()='Вход']") # Заголовок "Вход"
     
 class ConstructorLocators: # Конструктор 
-    SECTION_BUNS = (By.XPATH, "//span[text()='Булки']/parent::div[contains(@class, 'tab_tab__1SPyG')]") # Раздел "Булки"
-    SECTION_SAUCES = (By.XPATH, "//span[text()='Соусы']/parent::div[contains(@class, 'tab_tab__1SPyG')]") # Раздел "Соусы"
-    SECTION_FILLINGS = (By.XPATH, "//span[text()='Начинки']/parent::div[contains(@class, 'tab_tab__1SPyG')]") # Раздел "Начинки"
+    SECTION_BUNS = (By.XPATH, "//span[text()='Булки']/parent::div[contains(@class, 'tab_tab__1SPyG')]") # Раздел "Булки". 
+    SECTION_SAUCES = (By.XPATH, "//span[text()='Соусы']/parent::div[contains(@class, 'tab_tab__1SPyG')]") # Раздел "Соусы".
+    SECTION_FILLINGS = (By.XPATH, "//span[text()='Начинки']/parent::div[contains(@class, 'tab_tab__1SPyG')]") # Раздел "Начинки".
 
     CONTENT_BUNS = (By.XPATH, "//h2[text()='Булки']")
     CONTENT_SAUCES = (By.XPATH, "//h2[text()='Соусы']")
